@@ -1,10 +1,7 @@
 n=int(input())
-for i in range(1,n+1):
-    for q in range(1,n-i+1):
-        print(' ',end='')
-    for j in range(1,n+1):
-        if j==1 or j==n or i==1 or i==n:
-            print('*',end='')
-        else:
-            print(' ',end='')
+x=ord('A')+n-1
+for i in range(n):
+    for j in range(n-i):
+        print(chr(x),end=' ')
+    x-=1
     print()
