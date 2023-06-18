@@ -1,3 +1,4 @@
 l=list(map(str,input().split()))
-for i in l[::-1]:
+l=l[::-1]
+for i in l:
     print(i,end=' ')
